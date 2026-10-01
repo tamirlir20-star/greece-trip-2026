@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
@@ -155,8 +155,8 @@
     padding: 0.15rem 0.55rem; border-radius: 999px;
   }
   .day-title { font-size: 1.08rem; font-weight: 700; margin: 0; }
-  .day-km { font-size: 0.8rem; font-weight: 600; color: var(--accent2); margin-inline-start: 0.4rem; }
-  .day-date { margin-inline-start: auto; font-size: 0.85rem; color: var(--ink-soft); }
+  .day-km { flex-basis: 100%; font-size: 0.82rem; font-weight: 600; color: var(--accent2); }
+  .day-date { flex-basis: 100%; font-size: 0.85rem; color: var(--ink-soft); }
   .agenda { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.6rem; }
   .agenda li { display: grid; grid-template-columns: 4.2rem 1fr; gap: 0.7rem; align-items: baseline; }
   .agenda time { color: var(--accent2); font-size: 0.85rem; font-weight: 600; }
@@ -252,7 +252,6 @@
 
   <section id="flights" class="collapsible">
     <div class="section-head"><span class="ic">✈️</span><h2>טיסות</h2><span class="sec-chev">▾</span></div>
-    <p class="section-note" style="margin-top:-0.7rem">לבצע צ׳ק־אין 24 שעות לפני הטיסה: <a href="https://www.elal.com/CheckIn/Home/New_Identification/c?language=heb" target="_blank" rel="noopener">צ׳ק־אין באתר אל על</a></p>
     <div class="book">
       <div class="book-head"><h3>טיסת הלוך — אל על LY 5245</h3></div>
       <dl>
@@ -275,12 +274,12 @@
     <div class="section-head"><span class="ic">🏨</span><h2>בתי מלון</h2><span class="sec-chev">▾</span></div>
     <div class="book">
       <div class="book-head"><h3>ליטוחורו — מלון Mediterranean Village</h3></div>
-      <dl><div><dd>19.10–22.10 (3 לילות)</dd></div></dl>
+      <dl><div><dd class="num">19–21.10</dd></div></dl>
       <p style="margin:0.5rem 0 0"><a href="https://mediterraneanhotels.gr/hotels/village/" target="_blank" rel="noopener">אתר המלון</a></p>
     </div>
     <div class="book">
       <div class="book-head"><h3>מטאורה — מלון דיווני</h3></div>
-      <dl><div><dd>22.10–24.10 (2 לילות)</dd></div></dl>
+      <dl><div><dd class="num">22–23.10</dd></div></dl>
       <p style="margin:0.5rem 0 0"><a href="https://divanimeteorahotel.com/" target="_blank" rel="noopener">אתר המלון</a></p>
     </div>
   </section>
@@ -294,7 +293,8 @@
       <div class="day-body">
         <div class="day-head">
           <span class="day-num">יום 1</span>
-          <h3 class="day-title display">נסיעה לליטוחורו <span class="day-km num">🥾 3.5 ק״מ</span></h3>
+          <h3 class="day-title display">נסיעה לליטוחורו וטיול</h3>
+          <span class="day-km">🥾 3.5 ק״מ</span>
           <span class="day-date num">שני 19.10</span>
         </div>
         <ul class="agenda">
@@ -318,7 +318,8 @@
       <div class="day-body">
         <div class="day-head">
           <span class="day-num">יום 2</span>
-          <h3 class="day-title display">מסלול הקניון באגיוס קוריס <span class="day-km num">🥾 5 ק״מ · עלייה 230 מ׳</span></h3>
+          <h3 class="day-title display">מסלול הקניון באגיוס קוריס</h3>
+          <span class="day-km">🥾 5 ק״מ, עלייה מצטברת 230 מ׳</span>
           <span class="day-date num">שלישי 20.10</span>
         </div>
         <ul class="agenda">
@@ -339,7 +340,8 @@
       <div class="day-body">
         <div class="day-head">
           <span class="day-num">יום 3</span>
-          <h3 class="day-title display">מסלול האולימפוס <span class="day-km num">🥾 3 או 6 ק״מ</span></h3>
+          <h3 class="day-title display">מסלול האולימפוס</h3>
+          <span class="day-km">🥾 4 ק״מ, עלייה מצטברת 300 מ׳</span>
           <span class="day-date num">רביעי 21.10</span>
         </div>
         <ul class="agenda">
@@ -360,7 +362,8 @@
       <div class="day-body">
         <div class="day-head">
           <span class="day-num">יום 4</span>
-          <h3 class="day-title display">מסלול הכפרים האותנטיים ונסיעה למטאורה <span class="day-km num">🥾 5 ק״מ בירידה</span></h3>
+          <h3 class="day-title display">מסלול הכפרים האותנטיים ונסיעה למטאורה</h3>
+          <span class="day-km">🥾 5 ק״מ מישורי</span>
           <span class="day-date num">חמישי 22.10</span>
         </div>
         <ul class="agenda">
@@ -385,7 +388,8 @@
       <div class="day-body">
         <div class="day-head">
           <span class="day-num">יום 5</span>
-          <h3 class="day-title display">מסלול הליכה במטאורה <span class="day-km num">🥾 4.5 ק״מ</span></h3>
+          <h3 class="day-title display">מסלול הליכה במטאורה</h3>
+          <span class="day-km">🥾 4.5 ק״מ</span>
           <span class="day-date num">שישי 23.10</span>
         </div>
         <ul class="agenda">
